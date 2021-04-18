@@ -15,7 +15,7 @@ Usage:
            '2b' select and enable pwm output B
            'all' select and enable pwm output A+B
 
-       period in uS
+       period in nS
        enable set to 1, enable pwm output
        enable set to 0, disable pwm output
 
@@ -33,7 +33,7 @@ Example:
 
         const pwm = require('bbai-pwm');
 
-        pwm.Init('2a', 50000, 1, function(err, stderr) {  //period 50000 microseconds
+        pwm.Init('2a', 50000, 1, function(err, stderr) {  //period 50000 nanoseconds
         if (err)
             console.log(err);
         });
